@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.FragmentModoTrabajo">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ip del Servidor"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
