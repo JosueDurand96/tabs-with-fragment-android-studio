@@ -6,92 +6,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.FragmentTareo">
-
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="358dp">
 
-            <Switch
-                android:id="@+id/switch1"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginBottom="48dp"
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Solicitar Unidad de Medida"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-              />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <Switch
-                android:id="@+id/switch2"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="100dp"
 
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Fecha de Inicio Manual"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-                />
-            <Switch
-                android:id="@+id/switch3"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Hora de Inicio Manual"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-                />
-            <Switch
-                android:id="@+id/switch4"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Fecha de Fin Manual"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-                />
-            <Switch
-                android:id="@+id/switch5"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Hora de Fin Manual"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-                />
-            <Switch
-                android:id="@+id/switch6"
-                android:layout_width="345dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="300dp"
-                android:layout_marginLeft="32dp"
-                android:checked="true"
-                android:text="Vigencia de descarga"
-                android:textColor="@android:color/black"
-                android:thumbTint="@android:color/black"
-                android:trackTint="@android:color/tertiary_text_dark"
-                />
-        </RelativeLayout>
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="48dp"
+
+                    android:checked="true"
+                    android:text="Solicitar Unidad de Medida"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+
+                    android:layout_marginTop="100dp"
+                    android:checked="true"
+                    android:text="Fecha de Inicio Manual"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="150dp"
+                    android:checked="true"
+                    android:text="Hora de Inicio Manual"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="200dp"
+                    android:checked="true"
+                    android:text="Fecha de Fin Manual"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="250dp"
+                    android:checked="true"
+                    android:text="Hora de Fin Manual"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+
+                <Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="345dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="300dp"
+                    android:checked="true"
+                    android:text="Vigencia de descarga"
+                    android:textColor="@android:color/black"
+                    android:thumbTint="@android:color/black"
+                    android:trackTint="@android:color/tertiary_text_dark" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
