@@ -35,12 +35,6 @@ public class FragmentTareo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-//        Spinner  logAs = (Spinner) getActivity().findViewById(R.id.nice_spinner);
-//        ArrayAdapter dataAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, ItemsUnidadMedia);
-//        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        logAs.setAdapter(dataAdapter);
-//        return inflater.inflate(R.layout.fragment_fragment_tareo, container, false);
         View view = inflater.inflate(R.layout.fragment_fragment_tareo, container, false);
 
 

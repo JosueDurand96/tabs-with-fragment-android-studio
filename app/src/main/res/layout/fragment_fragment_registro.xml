@@ -9,52 +9,57 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:layout_marginTop="80dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="482dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="Unidad de Medida"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <Spinner
-                android:id="@+id/spMedida"
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:layout_margin="5dp" />
+                android:layout_height="67dp"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="482dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Unidad de Medida"
+                    android:textColor="@color/colorPrimaryDark" />
+                <Spinner
+                    android:id="@+id/spMedida"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="67dp"
             android:layout_marginTop="175dp"
             android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="482dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="Turno"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <Spinner
-                android:id="@+id/spTurno"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_margin="5dp"
-                android:layout_height="38dp" />
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="482dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Turno"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spTurno"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="38dp" />
+            </androidx.cardview.widget.CardView>
+
+
 
         </LinearLayout>
 
@@ -63,22 +68,27 @@
             android:layout_height="67dp"
             android:layout_marginTop="275dp"
             android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textView234"
-                android:layout_width="482dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="Clase"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <Spinner
-                android:id="@+id/spClase"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_margin="5dp"
-                android:layout_height="38dp" />
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView234"
+                    android:layout_width="482dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Clase"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spClase"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="38dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
 
         </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
