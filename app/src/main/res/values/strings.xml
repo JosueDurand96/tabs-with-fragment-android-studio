@@ -1,6 +1,13 @@
-<resources>
+    <resources>
     <string name="app_name">Slider Fragment Tabs</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string-array name="aves">
+            <item>Seleccionar Unidad de Medida:</item>
+            <item>Paucar</item>
+            <item>Colibri</item>
+            <item>Paloma</item>
+            <item>Garza</item>
+        </string-array>
 </resources>
