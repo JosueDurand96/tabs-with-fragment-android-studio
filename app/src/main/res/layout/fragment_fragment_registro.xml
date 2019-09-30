@@ -10,19 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-
-        <Spinner
-            android:id="@+id/nice_spinner"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/aves"
-            android:layout_margin="50dp"/>
-    </RelativeLayout>
+            android:layout_height="67dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="482dp"
+                android:layout_height="221dp"
+                android:layout_weight="1"
+                android:text="Unidad de Medida" />
+
+            <Spinner
+                android:id="@+id/nice_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+        </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </FrameLayout>
