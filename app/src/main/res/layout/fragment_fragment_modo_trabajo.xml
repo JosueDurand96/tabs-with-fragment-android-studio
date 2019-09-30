@@ -34,124 +34,114 @@
         </RelativeLayout>
 
 
-        <androidx.cardview.widget.CardView
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="10dp"
-            android:layout_marginTop="150dp">
+            android:layout_marginTop="150dp"
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="Modo"
+                android:textColor="@android:color/black"
+                android:textSize="32sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
-
-                android:layout_height="match_parent">
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="166dp"
-                    android:layout_height="wrap_content"
-                    android:text="Modo"
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Carga:  "
                     android:textColor="@android:color/black"
-                    android:textSize="32sp" />
+                    android:textSize="19sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="45dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:text="Línea" />
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="32dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:text="Carga:  "
-                        android:textColor="@android:color/black"
-                        android:textSize="19sp" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Línea" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Batch" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="125dp"
+                    android:layout_weight="1"
+                    android:text="Batch" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
 
-                    android:orientation="horizontal">
+                android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView4s"
-                        android:layout_width="60dp"
-                        android:layout_height="32dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:text="Descargar:"
-                        android:textColor="@android:color/black"
-                        android:textSize="19sp" />
+                <TextView
+                    android:id="@+id/textView4s"
+                    android:layout_width="60dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Descargar:"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton2ss"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Línea" />
-
-                    <RadioButton
-                        android:id="@+id/radioButtossn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Batch" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:id="@+id/radioButton2ss"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="205dp"
+                    android:layout_weight="1"
+                    android:text="Línea" />
 
-                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButtossn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Batch" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="205dp"
 
-                    <TextView
-                        android:id="@+id/textView4ss"
-                        android:layout_width="60dp"
-                        android:layout_height="32dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:text="Registro:"
-                        android:textColor="@android:color/black"
-                        android:textSize="19sp" />
+                android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/radioButton2sss"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Línea" />
+                <TextView
+                    android:id="@+id/textView4ss"
+                    android:layout_width="60dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Registro:"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
 
-                    <RadioButton
-                        android:id="@+id/radioButtsossn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Batch" />
-                </LinearLayout>
-            </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/radioButton2sss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Línea" />
 
-        </androidx.cardview.widget.CardView>
-
+                <RadioButton
+                    android:id="@+id/radioButtsossn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Batch" />
+            </LinearLayout>
+        </RelativeLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </FrameLayout>
