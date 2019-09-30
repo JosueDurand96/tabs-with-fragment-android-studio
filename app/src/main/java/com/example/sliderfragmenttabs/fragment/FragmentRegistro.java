@@ -1,7 +1,5 @@
 package com.example.sliderfragmenttabs.fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -22,19 +20,26 @@ public class FragmentRegistro extends Fragment {
         // Required empty public constructor
     }
 
-    String[] ItemsUnidadMedia = {"Seleccionar Unidad de Medida:", "Kilogramo", "Hora",
+    String[] ItemsUnidadMedia = { "Kilogramo", "Hora",
             "Caja", "Jaba", "Atado", "Pote", "Saco", "Aves", "Sin Unidad",};
+
+    String[] ItemsTurno = {"Mañana","Tarde","Noche"};
+    String[] ItemsClase = {"Campo","Planta","Piura","Empleado"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_fragment_registro, container, false);
         View view = inflater.inflate(R.layout.fragment_fragment_registro, container, false);
-        Spinner logAs = (Spinner) view.findViewById(R.id.nice_spinner);
-       ArrayAdapter dataAdapter = new ArrayAdapter(view.getContext(), android.R.layout.simple_spinner_item, ItemsUnidadMedia);
-       // dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        logAs.setAdapter(dataAdapter);
+         Spinner spMedida = (Spinner) view.findViewById(R.id.spMedida);
+         ArrayAdapter dataAdapter = new ArrayAdapter(view.getContext(), android.R.layout.simple_spinner_item, ItemsUnidadMedia);
+         spMedida.setAdapter(dataAdapter);
 
+         Spinner spTurno =(Spinner)view.findViewById(R.id.spTurno);
+         ArrayAdapter arrayAdapter = new ArrayAdapter(view.getContext(),android.R.layout.simple_spinner_item,ItemsTurno);
+         spTurno.setAdapter(arrayAdapter);
+
+        Spinner spClase =(Spinner)view.findViewById(R.id.spClase);
+        ArrayAdapter arrayAdapterClase = new ArrayAdapter(view.getContext(),android.R.layout.simple_spinner_item,ItemsClase);
+        spClase.setAdapter(arrayAdapterClase);
         return view;
     }
 
